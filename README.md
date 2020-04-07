@@ -1,4 +1,5 @@
 # SaltStack自动化部署Kubernetes(kubeadm版)
+test
 
 - 本文是基于saltstack与kubeadm自动化部署k8s集群
 
