@@ -1,6 +1,6 @@
 # SaltStack自动化部署Kubernetes(kubeadm版)
 
-- 本文是基于saltstack与kubeadm自动化部署K8s集群
+- 本文是基于saltstack与kubeadm自动化部署k8s集群
 
 ## 版本明细：
 
