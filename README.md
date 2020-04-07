@@ -2,7 +2,7 @@
 
 - 本文是基于saltstack与kubeadm自动化部署K8s集群
 
-## 版本明细：Release-v1.14.9
+## 版本明细：
 
 - 测试通过系统：CentOS 7.6
 - salt-ssh:     3000.1
@@ -21,14 +21,19 @@
 ## 1.系统初始化(必备)
 
 1.1 设置主机名，且保证主机名能被DNS解析
+```
+cat /etc/hosts
+linux-noed1 172.16.1.6
+```
 
-1.3 关闭SELinux
+1.2关闭SELinux
+
 ```
 [root@linux-node1 ~]# vim /etc/sysconfig/selinux
 SELINUX=disabled #修改为disabled
 ```
 
-1.4 关闭NetworkManager和防火墙开启自启动
+1.3 关闭NetworkManager和防火墙开启自启动
 ```
 [root@linux-node1 ~]# systemctl stop firewalld && systemctl disable firewalld
 [root@linux-node1 ~]# systemctl stop NetworkManager && systemctl disable NetworkManager
@@ -51,7 +56,7 @@ yum install -y salt-ssh git
 
 2.3 获取本项目代码，并放置在/srv目录
 ```bash
-git clone https://github.com/unixhot/salt-kubeadm.git
+git clone https://github.com:hikubernetes/salt-kubeadm.git
 cd salt-kubeadm/
 mv * /srv/
 cp /srv/roster /etc/salt/roster
