@@ -1,24 +1,4 @@
 # SaltStack自动化部署Kubernetes(kubeadm版)
-test
-test
-test
-test
-test
-test
-test
-test
-test
-test
-test
-test
-test
-test
-test
-test
-
-caicai
-caicai
-菜鸡
 
 - 本文是基于saltstack与kubeadm自动化部署k8s集群
 
