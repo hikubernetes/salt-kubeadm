@@ -56,7 +56,7 @@ yum install -y salt-ssh git
 
 2.3 获取本项目代码，并放置在/srv目录
 ```bash
-git clone https://github.com:hikubernetes/salt-kubeadm.git
+git clone https://github.com/hikubernetes/salt-kubeadm.git
 cd salt-kubeadm/
 mv * /srv/
 cp /srv/roster /etc/salt/roster
